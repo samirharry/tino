@@ -21,51 +21,108 @@
 <style>
 	th{
 		text-align: center;
+
 	}
+    body{
+        text-transform: uppercase; 
+    }
 </style>
 <body>
 	<header class="mt-5 justify-content-center">
-		<h1 style="text-align: center;">Parametros de Grado Academico</h1>
+		<h1 style="text-align: center;">Parametros de Sistema de Evaluación</h1>
 	</header>
 	<br>
-	<br>
+    <br>
+    <div class="form-group col-md-2">
+        <label for="inputState">Sistema de Evaluacion</label>
+        <select id="inputState" class="form-control">
+          <option selected>A</option>
+          <option>B</option>
+        </select>
+
+        
+
+    </div>
+    <div class="row justify-content-center mb-5">
+                <div class="col-sm-2"><button class="btn btn-primary">Nuevo <i class="fa fa-"></i></button></div>
+                <div class="col-sm-2"><button class="btn btn-warning">Editar</button></div>
+                <div class="col-sm-2"><button class="btn btn-danger">Agregar</button></div>
+                <div class="col-sm-2"><button class="btn btn-">Quitar</button></div>
+            </div>
 	<div class="container">
+        
 		<div class="row justify-content-center">
 			<div class="col-md-10">
 				<table class="table table-hover table-bordered" id="myTable">
 					<thead>
 						<th>
-							Grado Academico
+							Tipo Prueba
 						</th>
 						<th>
-							Nota Minima <br>Aprobatoria
+							Sub-Tipo Prueba
 						</th>
+						<th>
+							Peso
+						</th>
+						
 					</thead>
 					<tbody>
 						<tr>
 							<td>
-								Bachiller
+								EXAMEN
+                            </td>
+                            <td>
+								PARCIAL
+                            </td>
+                            <td>
+								25%
 							</td>
+							
+
+						</tr>
+						<tr>
 							<td>
-								15
+								EXAMEN
+                            </td>
+                            <td>
+								FINAL
+                            </td>
+                            <td>
+								25%
 							</td>
 
 						</tr>
 						<tr>
 							<td>
-								Maestría
+								PRACTICA
+                            </td>
+                            <td>
+								DIRIGIDA
+                            </td>
+                            <td>
+								0%
 							</td>
+                        </tr>
+                        <tr>
 							<td>
-								12
+								PRACTICA
+                            </td>
+                            <td>
+								CALIFICADA
+                            </td>
+                            <td>
+								20%
 							</td>
-
-						</tr>
-						<tr>
+                        </tr>
+                        <tr>
 							<td>
-								Doctorado
-							</td>
-							<td>
-								14
+								PRACTICA
+                            </td>
+                            <td>
+								LABORATORIO
+                            </td>
+                            <td>
+								30%
 							</td>
 						</tr>
 					</tbody>
@@ -74,11 +131,7 @@
 		</div>
 		<br>
 		<br>
-		<div class="row justify-content-center mb-5">
-			<div class="col-sm-2"><button class="btn btn-primary">Nuevo <i class="fa fa-"></i></button></div>
-			<div class="col-sm-2"><button class="btn btn-warning">Editar</button></div>
-			<div class="col-sm-2"><button class="btn btn-danger">Quitar</button></div>
-		</div>
+		
 		<hr>
 	</div>
 
