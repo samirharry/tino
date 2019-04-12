@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="bootstrap-4.3.1/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/af-2.3.3/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-2.0.0/sl-1.3.0/datatables.min.css" />
+	<script src="js/jquery.js"></script>
+	<script src="bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+	<script type="text/javascript"
+		src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/af-2.3.3/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-2.0.0/sl-1.3.0/datatables.min.js"></script>
+</head>
+<style>
+	th {
+		text-align: center;
+	}
+
+	td {
+		text-align: center;
+	}
+
+	body {
+		text-transform: uppercase;
+	}
+</style>
+
+<body>
+	<header class="mt-5 justify-content-center">
+		<h1 style="text-align: center;">Parametros de Periodo</h1>
+	</header>
+	<br />
+	<br />
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-10">
+				<table class="table table-hover table-bordered" id="myTable">
+					<thead>
+						<tr>
+							<th>Codigo</th>
+							<th>FEcha de inicio</th>
+							<th>fecha de fin </th>
+							<th>Tipo</th>
+							<th>grado</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <input class="form-control" disabled value="2018-03"> </td>
+							<td>
+								<div class="input-group mb-3">
+									<input disabled type="text" class="form-control" value="08-01-19">
+									<div class="input-group-append">
+										<span class="input-group-text">
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+										</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="input-group mb-3">
+									<input disabled type="text" class="form-control" value="28-02-19">
+									<div class="input-group-append">
+										<span class="input-group-text">
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+										</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="input-group mb-3">
+									<select  disabled class="custom-select" id="inputGroupSelect03"
+										aria-label="Example select with button addon">
+										<option>SELECCIONE UNO</option>
+										<option value="1">VERANO</option>
+										<option selectedvalue="2">REGULAR</option>
+										<option  value="3">ANUAL</option>
+									</select>
+								</div>
+							</td>
+							<td>
+								<div class="input-group mb-3">
+
+									<select disabled class="custom-select" id="inputGroupSelect03"
+										aria-label="Example select with button addon">
+										<option>SELECCIONE UNO</option>
+										<option selected value="1">BACHILLER</option>
+										<option value="2">MAESTRIA</option>
+										<option value="3">DOCTORADO</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td> <input class="form-control" disabled value="2019-01"> </td>
+							<td>
+								<div class="input-group mb-3">
+									<input disabled type="text" class="form-control" value="18-03-19">
+									<div class="input-group-append">
+										<span class="input-group-text">
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+										</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="input-group mb-3">
+									<input disabled type="text" class="form-control" value="22-07-19">
+									<div class="input-group-append">
+										<span class="input-group-text">
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+										</span>
+									</div>
+								</div>
+							</td>
+
+							<td>
+								<div class="input-group mb-3">
+									<select disabled class="custom-select" id="inputGroupSelect03"
+										aria-label="Example select with button addon">
+										<option>SELECCIONE UNO</option>
+										<option selected value="1">VERANO
+
+										</option>
+										<option value="2">
+											REGULAR
+										</option>
+										<option  value="3">
+											ANUAL
+										</option>
+									</select>
+								</div>
+							</td>
+							<td>
+								<div class="input-group mb-3">
+									<select disabled class="custom-select" id="inputGroupSelect03"
+										aria-label="Example select with button addon">
+										<option>SELECCIONE UNO</option>
+										<option value="1">BACHILLER</option>
+										<option selected value="2">MAESTRIA</option>
+										<option value="3">DOCTORADO</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td> <input class="form-control" value="2019-02"> </td>
+							<td>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" value="06-08-19">
+									<div class="input-group-append">
+										<span class="input-group-text">
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+										</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" value="15-12-19">
+									<div class="input-group-append">
+										<span class="input-group-text">
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+										</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="input-group mb-3">
+									<select class="custom-select" id="inputGroupSelect03"
+										aria-label="Example select with button addon">
+										<option>SELECCIONE UNO</option>
+										<option value="1">VERANO
+
+										</option>
+										<option value="2">
+											REGULAR
+										</option>
+										<option selected value="3">
+											ANUAL
+										</option>
+									</select>
+								</div>
+							</td>
+							<td>
+								<div class="input-group mb-3">
+									<select class="custom-select" id="inputGroupSelect03"
+										aria-label="Example select with button addon">
+										<option>SELECCIONE UNO</option>
+										<option value="1">BACHILLER</option>
+										<option value="2">MAESTRIA</option>
+										<option selected value="3">DOCTORADO</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<br />
+		<br />
+		<div class="row justify-content-center mb-5">
+			<div class="col-sm-2">
+				<button class="btn btn-primary">Nuevo <i class="fa fa-"></i></button>
+			</div>
+			<div class="col-sm-2">
+				<button class="btn btn-warning">Editar</button>
+			</div>
+			<div class="col-sm-2">
+				<button class="btn btn-danger">Quitar</button>
+			</div>
+		</div>
+		<hr />
+	</div>
+</body>
+<script>
+	$(document).ready(function () {
+		$("#myTable").DataTable({
+			paging: false,
+			info: false,
+			searching: false
+		});
+	});
+</script>
+
+</html>
