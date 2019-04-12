@@ -33,7 +33,7 @@
 
 <body>
 	<header class="mt-5 justify-content-center">
-		<h1 style="text-align: center;">Parametros de Curso</h1>
+		<h1 style="text-align: center;">Parametros de Tipo de Curso</h1>
 	</header>
 	<br />
 	<br />
@@ -43,55 +43,31 @@
 				<table class="table table-hover table-bordered" id="myTable">
 					<thead>
 						<tr>
-							<th>Codigo</th>
-							<th>Nombre</th>
-							<th>Objetivo</th>
-							<th>Creditos</th>
-							<th>Estado</th>
-							<th>Silabo</th>
-							
+							<th>Codigo</th>							
+							<th>Nombre </th>
+							<th> Descripcion </th>
 						</tr>
 					</thead>
 					<tbody>
+						
 						<tr>
-							<td>MAT-01</td>
-							<td>MAT. I</td>
-							<td>ANALISIS DERIVADAS</td>
-							<td>4</td>
-							<td> <input type="checkbox" class="form-control"> </td>
-							<td><a type="button" class="btn btn-success"> <i class="fa fa-archive"
-										aria-hidden="true"></i> </a> </td>
-						</tr>
-						<tr>
-							<td>MAT-02</td>
-							<td>MAT. II</td>
-							<td> INTEGRALES </td>
-							<td>4</td>
-							<td> <input type="checkbox" class="form-control"> </td>
-							<td><a type="button" class="btn btn-success"> <i class="fa fa-archive"
-										aria-hidden="true"></i> </a> </td>
-
-						</tr>
-						<tr>
-							<td>CON-02</td>
-							<td>COntabilidad de costos y presupuestos</td>
-							<td> Estudiar los costos y su planificacion </td>
-							<td>4</td>
-							<td> <input type="checkbox" class="form-control"> </td>
-							<td><a href="parametroSilabo.html" type="button" class="btn btn-success"> <i class="fa fa-archive"
-										aria-hidden="true"></i> </a> </td>
-
-						</tr>
-						<tr>
-							<td> <input type="text" class="form-control" value="MAT-03" /> </td>
-							<td> <input type="text" class="form-control" value="MAT. III" /> </td>
-							<td> <input type="text" class="form-control" value="INTEGRALES EN EL ESPACIO " /> </td>
-							<td> <input type="text" class="form-control" value="4" /> </td>
-							<td> <input type="checkbox" class="form-control"> </td>
-							<td><a type="button" class="btn btn-success"> <i class="fa fa-archive"
-										aria-hidden="true"></i> </a> </td>
-
-						</tr>
+							<td> <input disabled class="form-control" value="TC-01"> </td>
+                            <td> <input disabled class="form-control" value="OBLIGATORIO"> </td>
+                            <td>
+								<input disabled type="text" class="form-control" value="CURSO DE CARRERA"
+									placeholder="">
+							</td>
+                        </tr>
+                        <tr>
+							<td> <input disabled class="form-control" value="TC-02"> </td>
+                            <td> <input disabled class="form-control" value="ELECTIVO"> </td>
+                            <td>
+								<input disabled type="text" class="form-control" value="CURSO DE CARACTER ELECTIVO"
+									placeholder="">
+							</td>
+                        </tr>
+                       
+						
 					</tbody>
 				</table>
 			</div>
@@ -104,6 +80,9 @@
 			</div>
 			<div class="col-sm-2">
 				<button class="btn btn-warning">Editar</button>
+            </div>
+            <div class="col-sm-2">
+				<button class="btn btn-dark">Guardar</button>
 			</div>
 			<div class="col-sm-2">
 				<button class="btn btn-danger">Quitar</button>
@@ -113,11 +92,11 @@
 	</div>
 </body>
 <script>
-
 	$(document).ready(function () {
 		$("#myTable").DataTable({
 			paging: false,
-			info: false
+			info: false,
+			searching: false
 		});
 	});
 </script>
