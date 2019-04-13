@@ -30,7 +30,7 @@
     th {
       text-align: center;
     }
-    td {
+		td {
       text-align: center;
     }
 
@@ -41,7 +41,7 @@
 
   <body>
     <header class="mt-5 justify-content-center">
-      <h1 style="text-align: center;">Parametros de Seccion factor</h1>
+      <h1 style="text-align: center;"> HORARIOS</h1>
     </header>
     <br />
     <br />
@@ -51,23 +51,38 @@
           <table class="table table-hover table-bordered" id="myTable">
             <thead>
               <tr>
-                <th>Seccion</th>
-                <th>Factor</th>
+                <th>CODIGO</th>
+                <th>DIA</th>
+                <th>HORA INICO</th>
+                <th>HORA FIN</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-								<td>Secc A</td>
-                <td>Prom Ponderado > 14</td>
+                <td>HORA-01</td>
+                <td>20-10-19</td>
+                <td>08:00</td>
+                <td>10:00</td>
               </tr>
               <tr>
-								<td>Secc A</td>
-                <td>Ingreso =  Normal</td>
+                <td>HORA-02</td>
+                <td>20-10-19</td>
+                <td>10:00</td>
+                <td>12:00</td>
               </tr>
               <tr>
-								<td>Secc A</td>
-                <td>Edad < 20</td>
+                <td>HORA-03</td>
+                <td>20-10-19</td>
+                <td>12:00</td>
+                <td>14:00</td>
               </tr>
+              <tr>
+                <td>HORA-04</td>
+                <td>20-10-19</td>
+                <td>14:00</td>
+                <td>16:00</td>
+              </tr>
+              
             </tbody>
           </table>
         </div>
@@ -84,17 +99,22 @@
         <div class="col-sm-2">
           <button class="btn btn-danger">Quitar</button>
         </div>
+        <div class="col-sm-2">
+          <button class="btn btn-dark">Guardar</button>
+        </div>
+        <div class="col-sm-2">
+          <button class="btn btn-success">Cancelar</button>
+        </div>
       </div>
       <hr />
     </div>
   </body>
   <script>
- /*  
-   $(document).ready(function() {
+    $(document).ready(function() {
       $("#myTable").DataTable({
         paging: false,
         info: false
       });
-    });*/
+    });
   </script>
 </html>
