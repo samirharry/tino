@@ -15,7 +15,7 @@ var config = {
 	security = {
 		parent: cap_system,
 		stackChildren: true,
-		innerHTML: " <a href='#' class='btn btn-primary'  style=' width: 100%'> Seguridad</a> ",
+		innerHTML: " <a href='seguridad.html' class='btn btn-primary'  style=' width: 100%'> Seguridad</a> ",
 	},
 	online = {
 		parent: cap_system,
