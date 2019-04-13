@@ -38,8 +38,6 @@
 		<h1 style="text-align: center;">Alumnos Matriculados</h1>
 	</header>
 	<br>
-	
-	<br>
 	<div>
 		<h2 style="text-align: center;"> CURSO </h2>
 	</div>
@@ -61,42 +59,32 @@
 			<option value="">CAPACITACION 04</option>
 		</select>
 	</div>
-	<div class="row">
+	<div class="row justify-content-center mt-5">
 		<div class="col-sm-8">
-			<canvas id="myChart" width="100%" height></canvas>
+			<canvas id="myChart" width="80%" height></canvas>
 		</div>
 	</div>
 </body>
 <script src="JS/chart.min.js"></script>
 <script>
-	$(document).ready(function () {
-		$('#myTable').DataTable({
-			"order": [[2, "desc"]]
-		});
-	});
 	var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['2018-3', '2019-1', '2019-2'],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'Cantidad de Matriculados',
+            data: [60, 75, 53],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+				'rgba(255, 99, 132, 0.2)',
+				'rgba(255, 99, 132, 0.2)'
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+				'rgba(255, 99, 132, 1)',
+				'rgba(255, 99, 132, 1)'
+
             ],
             borderWidth: 1
         }]
