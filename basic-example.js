@@ -192,6 +192,11 @@ var config = {
 		stackChildren: true,
 		innerHTML: " <a href='entradaMatricula.html' class='btn btn-primary'  style=' width: 100%'> MATRICULA DE ALUMNOS </a> ",
 	},
+	reclamos_entry={
+		parent: data_entry,
+		stackChildren: true,
+		innerHTML: " <a href='EntradaReclamo.html' class='btn btn-primary'  style=' width: 100%'> RECLAMO DE NOTAS </a> ",
+	},
 	registro_notas={
 		parent: data_entry,
 		stackChildren: true,
@@ -320,6 +325,7 @@ chart_config = [
 	operativo,
 	data_entry,
 	matricula_entry,
+	reclamos_entry,
 	registro_asistencia,
 	registro_notas,
 	reportes,
