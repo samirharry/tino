@@ -38,12 +38,15 @@
 	<br>
 	<div class="container" style="width: 100%;">
 		<div class="row " style="width: 100%;">
-			<div class="col-md-12" style="width: 100%;">
+			<div class="col-md-9" style="width: 100%;">
 				<table class="table table-hover table-bordered" id="myTable">
 					<thead>
 						<tr>
 							<th>
 								Sesion
+							</th>
+							<th>
+								Capacitacion
 							</th>
 							<th>
 								Tema
@@ -61,9 +64,6 @@
 								Horario
 							</th>
 							<th>
-								Capacitacion
-							</th>
-							<th>
 								Docente
 							</th>
 							<th>
@@ -74,51 +74,60 @@
 					<tbody>
 						<tr>
 							<td> 1 </td>
+							<td> CAPACITACION-01</td>
 							<td> ARQUITECTURA </td>
 							<td> TEORIA </td>
 							<td> 120 </td>
 							<td> EJECUTADA</td>
 							<td> HORA-01 </td>
-							<td> CAPACITACION-01</td>
 							<td> PRINCIPAL </td>
 							<td> Aula normal </td>
 						</tr>
 						<tr>
 							<td> 2 </td>
+							<td> CAPACITACION-01 </td>
 							<td> DISEÑO EXTERNO</td>
 							<td> TEORIA </td>
 							<td> 120 </td>
 							<td> EJECUTADA </td>
 							<td> HORA-03 </td>
-							<td> CAPACITACION-01 </td>
 							<td> PRINCIPAL </td>
-							<td> Laboratorio de computo </td>
+							<td> Aula normal</td>
 						</tr>
 						<tr>
 							<td> 3 </td>
+							<td> CAPACITACION-01 </td>
 							<td> DISEÑO INTERNO</td>
 							<td> PRACTICA </td>
 							<td> 90</td>
 							<td> PROGRAMADA</td>
 							<td> HORA-01 </td>
-							<td> CAPACITACION-01 </td>
 							<td> PRINCIPAL </td>
-							<td> Aula normal </td>
+							<td>Laboratorio de computo </td>
 
 						</tr>
 						<tr>
 							<td> 4 </td>
+							<td> CAPACITACION-02 </td>
 							<td> HISTORIA DEL COMPUTADOR </td>
 							<td> TEORIA </td>
 							<td> 90 </td>
 							<td> EJECUTADA </td>
 							<td> HORA-04 </td>
-							<td> CAPACITACION-02 </td>
 							<td> PRINCIPAL </td>
-							<td> laboratorio de computo </td>
+							<td> Aula normal </td>
 						</tr>
 						<tr>
 							<td> 5 </td>
+											<td>
+												<select class="js-example-basic-multiple form-control" name="states[]" multiple="multiple">
+													<option value="AL">CAPACITACION-01</option>
+													<option value="WY">CAPACITACION-02</option>
+													<option value="WY">CAPACITACION-03</option>
+													<option value="WY">CAPACITACION-04</option>
+													<option value="WY">CAPACITACION-05</option>
+												</select> 
+											 </td>
 							<td>
 									<select class="js-example-basic-multiple form-control" name="themes[]" multiple="multiple">
 											<option value="AL">ENSAMBLAJE DEL COMPUTADOR</option>
@@ -137,21 +146,12 @@
 							<td> <input type="number" value="180" class="form-control"/> </td>
 								<td> <select class="form-control" name="" id="">
 										<option value=""> EJECUTADA </option>
-									<option value=""> PROGRAMADA </option>
+									<option selected value=""> PROGRAMADA </option>
 								</select></td>
 							<td> <select class="form-control" name="" id="">
 									<option value=""> HORA-01 </option>
 								<option value=""> HORA-02 </option>
 							</select> </td>
-							<td>
-								<select class="js-example-basic-multiple form-control" name="states[]" multiple="multiple">
-									<option value="AL">CAPACITACION-01</option>
-									<option value="WY">CAPACITACION-02</option>
-									<option value="WY">CAPACITACION-03</option>
-									<option value="WY">CAPACITACION-04</option>
-									<option value="WY">CAPACITACION-05</option>
-								</select> 
-							 </td>
 							<td>
 								<select class="form-control" name="" id="">
 									<option value=""> PRINCIPAL </option>
@@ -177,6 +177,7 @@
 			<div class="col-sm-2"><button class="btn btn-primary">Nuevo <i class="fa fa-"></i></button></div>
 			<div class="col-sm-2"><button class="btn btn-warning">Editar</button></div>
 			<div class="col-sm-2"><button class="btn btn-danger">Quitar</button></div>
+			<div class="col-sm-2"><button class="btn btn-dark">Guardar</button></div>
 		</div>
 		<hr>
 	</div>
