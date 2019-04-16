@@ -1,206 +1,221 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="bootstrap-4.3.1/dist/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/af-2.3.3/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-2.0.0/sl-1.3.0/datatables.min.css"
-    />
-    <script src="JS/jquery.js"></script>
-    <script src="bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/af-2.3.3/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-2.0.0/sl-1.3.0/datatables.min.js"
-    ></script>
-  </head>
-  <style>
-    th {
-      text-align: center;
-    }
-		td {
-      text-align: center;
-    }
 
-    body {
-      text-transform: uppercase;
-    }
-  </style>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" href="bootstrap-4.3.1/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/af-2.3.3/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-2.0.0/sl-1.3.0/datatables.min.css" />
+	<script src="JS/jquery.js"></script>
+	<script src="bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+	<script type="text/javascript"
+		src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/af-2.3.3/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-2.0.0/sl-1.3.0/datatables.min.js"></script>
+</head>
+<style>
+	th {
+		text-align: center;
+	}
 
-  <body>
-    <header class="mt-5 justify-content-center">
-      <h1 style="text-align: center;">Matricula</h1>
-    </header>
-    <br />
-    <br />
-    <div class="row  justify-content-center">
-        <h2>Tiene 5 Cursos Disponibles</h2>
-    </div>
-          <br />
+	td {
+		text-align: center;
+	}
 
-    <div class="container">
-      <div class="row justify-content-center mt-5">
-        <div class="col-md-10">
-                <h3> CONTABILIDAD DE COSTOS Y PRESUPUESTOS  <small> <span class="badge badge-pill badge-success">obligatorio</span> </small> </h3>
-            <div class = "row">
-                <div class="col-md-6">
-                    Seleccionar Seccion 
-                </div>
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                            <option selected>Escoja una sección</option>
-                            <option value="U">U-LU:20:00-22:00 MA-10:00-12:00</option>
-                            <option value="V">V-LU:14:00-16:00 MA-08:00-:00</option>
-                            <option value="W">W-LU:10:00-12:00 MA-10:00-12:00</option>
-                        </select>
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" onclick="showMessageAlert()">Confirmar</button>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-10">
-                <h3> 	LOGISTICA EMPRESARIAL <small> <span class="badge badge-pill badge-success">obligatorio</span> </small>  </h3>
-            <div class = "row">
-                <div class="col-md-6">
-                    Seleccionar Seccion 
-                </div>
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                            <option selected>Escoja una sección</option>
-                            <option value="U">U-LU:20:00-22:00 MA-10:00-12:00</option>
-                            <option value="V">V-LU:14:00-16:00 MA-08:00-:00</option>
-                            <option value="W">W-LU:10:00-12:00 MA-10:00-12:00</option>
-                        </select>
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" onclick="showMessageAlert()">Confirmar</button>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-          </div>
-      </div><div class="row justify-content-center mt-5">
-            <div class="col-md-10">
-                <h3>  MERCADOTECNIA <small>  <span class="badge badge-pill badge-success">obligatorio</span> </small> </h3>
-            <div class = "row">
-                <div class="col-md-6">
-                    Seleccionar Seccion 
-                </div>
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                            <option selected>Escoja una sección</option>
-                            <option value="U">U-LU:20:00-22:00 MA-10:00-12:00</option>
-                            <option value="V">V-LU:14:00-16:00 MA-08:00-:00</option>
-                            <option value="W">W-LU:10:00-12:00 MA-10:00-12:00</option>
-                        </select>
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" onclick="showMessageAlert()">Confirmar</button>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-          </div>
-      </div><div class="row justify-content-center mt-5">
-            <div class="col-md-10">
-                <h3> SIMULACION <small> <span class="badge badge-pill badge-success">obligatorio</span> </small> </h3>
-            <div class = "row">
-                <div class="col-md-6">
-                    Seleccionar Seccion 
-                </div>
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                            <option selected>Escoja una sección</option>
-                            <option value="U">U-LU:20:00-22:00 MA-10:00-12:00</option>
-                            <option value="V">V-LU:14:00-16:00 MA-08:00-:00</option>
-                            <option value="W">W-LU:10:00-12:00 MA-10:00-12:00</option>
-                        </select>
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" onclick="showMessageAlert()">Confirmar</button>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-          </div>
-      </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-10">
-                <h3> TALLER DE INGENIERIA DE SOFTWARE I <small> <span class="badge badge-pill badge-primary"> Electivo </span> </small></h3>
-            <div class = "row">
-                <div class="col-md-6">
-                    Seleccionar Seccion 
-                </div>
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                            <option selected>Escoja una sección</option>
-                            <option value="U">U-LU:20:00-22:00 MA-10:00-12:00</option>
-                            <option value="V">V-LU:14:00-16:00 MA-08:00-:00</option>
-                            <option value="W">W-LU:10:00-12:00 MA-10:00-12:00</option>
-                        </select>
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" onclick="showMessageAlert()">Confirmar</button>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-          </div>
-      </div>
-      <div class="row justify-content-center mt-5">
-        <div class="col-sm-4">
-          <button class="btn btn-primary">CONFIRMAR <i class="fa fa-"></i></button>
-        </div>
-        <div class="col-sm-4">
-          <button class="btn btn-warning">CANCELAR</button>
-        </div>
-      </div>
-      <hr />
-    </div>
-  </body>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-  <script>
-    $(document).ready(function() {
-      $("#myTable").DataTable({
-        paging: false,
-        info: false
-      });
-    });
-      function showMessageAlert(){
-          Swal.fire({
-            title: '¿Esta seguro de su elección?',
-            type: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Sí, acepto.'
-        }).then((result) => {
-              if (result.value) {
-                Swal.fire(
-                    'Matriculado',
-                    'Se matriculo con exito.',
-                    'success'
-                    )
-                }
-                }
-               )
-      }
-  </script>
+	body {
+		text-transform: uppercase;
+	}
+</style>
+
+<body>
+	<header class="mt-5 justify-content-center">
+		<h1 style="text-align: center;">Matricula</h1>
+	</header>
+	<br />
+	<br />
+	<div class="row  justify-content-center">
+		<h2> Tiene 5 Cursos Disponibles </h2>
+		<br>
+	</div>
+	<br>
+	<div class="row  justify-content-center">
+		<h3> Tiene 28 creditos permitidos </h3>
+	</div>
+	<br />
+
+	<div class="container">
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-10">
+				<h3> CONTABILIDAD DE COSTOS Y PRESUPUESTOS <small> <span
+							class="badge badge-pill badge-success">obligatorio </span> <span
+							class="badge badge-pill badge-primary"> 4 creditos</span> </small> </h3>
+				<div class="row">
+					<div class="col-md-6">
+						Seleccionar Seccion
+					</div>
+					<div class="col-md-6">
+						<div class="input-group">
+							<select class="custom-select" id="inputGroupSelect04"
+								aria-label="Example select with button addon">
+								<option selected>Escoja una sección</option>
+								<option value="U">U-LU:20:00-22:00 MA-10:00-12:00</option>
+								<option value="V">V-LU:14:00-16:00 MA-08:00-:00</option>
+								<option value="W">W-LU:10:00-12:00 MA-10:00-12:00</option>
+							</select>
+							<div class="input-group-append">
+								<button class="btn btn-outline-secondary" type="button"
+									onclick="showMessageAlert()">Confirmar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-10">
+				<h3> LOGISTICA EMPRESARIAL <small> <span class="badge badge-pill badge-success">obligatorio </span>
+						<span class="badge badge-pill badge-primary"> 3 creditos</span> </small> </h3>
+				<div class="row">
+					<div class="col-md-6">
+						Seleccionar Seccion
+					</div>
+					<div class="col-md-6">
+						<div class="input-group">
+							<select class="custom-select" id="inputGroupSelect04"
+								aria-label="Example select with button addon">
+								<option selected>Escoja una sección</option>
+								<option value="U">U-LU:20:00-22:00 MA-10:00-12:00</option>
+								<option value="V">V-LU:14:00-16:00 MA-08:00-:00</option>
+								<option value="W">W-LU:10:00-12:00 MA-10:00-12:00</option>
+							</select>
+							<div class="input-group-append">
+								<button class="btn btn-outline-secondary" type="button"
+									onclick="showMessageAlert()">Confirmar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-10">
+				<h3> MERCADOTECNIA <small> <span class="badge badge-pill badge-success">obligatorio</span> <span
+							class="badge badge-pill badge-primary"> 2 creditos</span> </small> </h3>
+				<div class="row">
+					<div class="col-md-6">
+						Seleccionar Seccion
+					</div>
+					<div class="col-md-6">
+						<div class="input-group">
+							<select class="custom-select" id="inputGroupSelect04"
+								aria-label="Example select with button addon">
+								<option selected>Escoja una sección</option>
+								<option value="U">U-LU:20:00-22:00 MA-10:00-12:00</option>
+								<option value="V">V-LU:14:00-16:00 MA-08:00-:00</option>
+								<option value="W">W-LU:10:00-12:00 MA-10:00-12:00</option>
+							</select>
+							<div class="input-group-append">
+								<button class="btn btn-outline-secondary" type="button"
+									onclick="showMessageAlert()">Confirmar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-10">
+				<h3> SIMULACION <small> <span class="badge badge-pill badge-success">obligatorio</span> <span
+							class="badge badge-pill badge-primary"> 4 creditos</span> </small> </h3>
+				<div class="row">
+					<div class="col-md-6">
+						Seleccionar Seccion
+					</div>
+					<div class="col-md-6">
+						<div class="input-group">
+							<select class="custom-select" id="inputGroupSelect04"
+								aria-label="Example select with button addon">
+								<option selected>Escoja una sección</option>
+								<option value="U">U-LU:20:00-22:00 MA-10:00-12:00</option>
+								<option value="V">V-LU:14:00-16:00 MA-08:00-:00</option>
+								<option value="W">W-LU:10:00-12:00 MA-10:00-12:00</option>
+							</select>
+							<div class="input-group-append">
+								<button class="btn btn-outline-secondary" type="button"
+									onclick="showMessageAlert()">Confirmar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-10">
+				<h3> TALLER DE INGENIERIA DE SOFTWARE I <small> <span class="badge badge-pill badge-primary"> Electivo
+						</span> <span class="badge badge-pill badge-primary"> 4 creditos</span> </small></h3>
+				<div class="row">
+					<div class="col-md-6">
+						Seleccionar Seccion
+					</div>
+					<div class="col-md-6">
+						<div class="input-group">
+							<select class="custom-select" id="inputGroupSelect04"
+								aria-label="Example select with button addon">
+								<option selected>Escoja una sección</option>
+								<option value="U">U-LU:20:00-22:00 MA-10:00-12:00</option>
+								<option value="V">V-LU:14:00-16:00 MA-08:00-:00</option>
+								<option value="W">W-LU:10:00-12:00 MA-10:00-12:00</option>
+							</select>
+							<div class="input-group-append">
+								<button class="btn btn-outline-secondary" type="button"
+									onclick="showMessageAlert()">Confirmar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-5">
+			<div class="col-sm-4">
+				<button class="btn btn-primary">CONFIRMAR <i class="fa fa-"></i></button>
+			</div>
+			<div class="col-sm-4">
+				<button class="btn btn-warning">CANCELAR</button>
+			</div>
+		</div>
+		<hr />
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script>
+	$(document).ready(function () {
+		$("#myTable").DataTable({
+			paging: false,
+			info: false
+		});
+	});
+	function showMessageAlert() {
+		Swal.fire({
+			title: '¿Esta seguro de su elección?',
+			type: 'warning',
+			showCancelButton: true,
+			confirmButtonColor: '#3085d6',
+			cancelButtonColor: '#d33',
+			confirmButtonText: 'Sí, acepto.'
+		}).then((result) => {
+			if (result.value) {
+				Swal.fire(
+					'Matriculado',
+					'Se matriculo con exito.',
+					'success'
+				)
+			}
+		}
+		)
+	}
+</script>
+
 </html>

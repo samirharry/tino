@@ -2,21 +2,22 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
+		<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>document</title>
+	<title>Document</title>
 	<link rel="stylesheet" href="bootstrap-4.3.1/dist/css/bootstrap.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css"
 		href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/af-2.3.3/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-2.0.0/sl-1.3.0/datatables.min.css" />
 	<script src="js/jquery.js"></script>
 	<script src="bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 	<script type="text/javascript"
 		src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/af-2.3.3/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-2.0.0/sl-1.3.0/datatables.min.js">
 		</script>
-
 </head>
 <style>
 	th {
@@ -56,9 +57,12 @@
 							<th>
 								Correo
 							</th>
-							
+
 							<th>
 								Tipo de Profesor
+							</th>
+							<th>
+								Cursos asoc
 							</th>
 							<th>
 								fecha de ingreso
@@ -81,6 +85,16 @@
 								</select>
 							</td>
 							<td>
+								<select class="js-example-basic-multiple form-control" name="states[]"
+									multiple="multiple">
+									<option value="AL"> Calculo Diferencial  </option>
+									<option value="WY"> GEOMETRIA ANALITICA </option>
+									<option value="WY"> DIBUJO EN INGENIERIA </option>
+									<option value="WY"> CONTABILIDAD DE COSTOS Y PRESUPUESTOS </option>
+									<option value="WY">CONTABILIDAD FINANCIERA</option>
+								</select>
+							</td>
+							<td>
 								<input class="form-control" type="date" value="15/02/19">
 							</td>
 						</tr>
@@ -97,6 +111,16 @@
 									<option value="">PRINCIPAL</option>
 									<option value="">AUXILIAR</option>
 									<option value="">ASISTENTE</option>
+								</select>
+							</td>
+							<td>
+								<select class="js-example-basic-multiple form-control" name="states[]"
+									multiple="multiple">
+									<option value="AL"> Calculo Diferencial  </option>
+									<option value="WY"> GEOMETRIA ANALITICA </option>
+									<option value="WY"> DIBUJO EN INGENIERIA </option>
+									<option value="WY"> CONTABILIDAD DE COSTOS Y PRESUPUESTOS </option>
+									<option value="WY">CONTABILIDAD FINANCIERA</option>
 								</select>
 							</td>
 							<td>
@@ -119,6 +143,16 @@
 								</select>
 							</td>
 							<td>
+								<select class="js-example-basic-multiple form-control" name="states[]"
+									multiple="multiple">
+									<option value="AL"> Calculo Diferencial  </option>
+									<option value="WY"> GEOMETRIA ANALITICA </option>
+									<option value="WY"> DIBUJO EN INGENIERIA </option>
+									<option value="WY"> CONTABILIDAD DE COSTOS Y PRESUPUESTOS </option>
+									<option value="WY">CONTABILIDAD FINANCIERA</option>
+								</select>
+							</td>
+							<td>
 								<input class="form-control" type="date" value="15/02/19">
 							</td>
 						</tr>
@@ -138,6 +172,16 @@
 								</select>
 							</td>
 							<td>
+								<select class="js-example-basic-multiple form-control" name="states[]"
+									multiple="multiple">
+									<option value="AL"> Calculo Diferencial  </option>
+									<option value="WY"> GEOMETRIA ANALITICA </option>
+									<option value="WY"> DIBUJO EN INGENIERIA </option>
+									<option value="WY"> CONTABILIDAD DE COSTOS Y PRESUPUESTOS </option>
+									<option value="WY">CONTABILIDAD FINANCIERA</option>
+								</select>
+							</td>
+							<td>
 								<input class="form-control" type="date" value="15/02/19">
 							</td>
 						</tr>
@@ -154,6 +198,16 @@
 									<option value="">PRINCIPAL</option>
 									<option value="">AUXILIAR</option>
 									<option value="">ASISTENTE</option>
+								</select>
+							</td>
+							<td>
+								<select class="js-example-basic-multiple form-control" name="states[]"
+									multiple="multiple">
+									<option value="AL"> Calculo Diferencial  </option>
+									<option value="WY"> GEOMETRIA ANALITICA </option>
+									<option value="WY"> DIBUJO EN INGENIERIA </option>
+									<option value="WY"> CONTABILIDAD DE COSTOS Y PRESUPUESTOS </option>
+									<option value="WY">CONTABILIDAD FINANCIERA</option>
 								</select>
 							</td>
 							<td>
@@ -185,6 +239,8 @@
 			"info": false,
 			"order": [[1, "asc"]]
 		});
+		$('.js-example-basic-multiple').select2();
+
 	});
 </script>
 
